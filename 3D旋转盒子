@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .stage{
+            perspective: 2000px;
+            perspective-origin: 1000px -1000px;
+            margin-left: 200px;
+            margin-top: 200px;
+        }
+        .stage .box{
+            transform-style: preserve-3d;
+            position: relative;
+            margin: 0 auto;
+            transition: all 1s;
+        }
+        .stage .box:hover{
+            transform: rotateX(90deg);
+        }
+        .face{
+            width: 200px;
+            height: 200px;
+            border: solid black 2px;
+            position:absolute;
+        }
+        .face:nth-child(1){
+            transform: translateZ(100px);
+        }
+        .face:nth-child(2){
+            transform: translateZ(-100px);
+        }
+        .face:nth-child(3){
+            transform: rotateX(90deg) translateZ(100px);
+        }
+        .face:nth-child(4){
+            transform: rotateX(-90deg) translateZ(100px);
+        }
+        .face:nth-child(5){
+            transform: rotateY(-90deg) translateZ(100px);
+        }
+        .face:nth-child(6){
+                     transform: rotateY(90deg) translateZ(100px);
+                 }
+    </style>
+<body>
+<div class="stage">
+    <div class="box">
+        <div class="face">前</div>
+        <div class="face">后</div>
+        <div class="face">上</div>
+        <div class="face">下</div>
+        <div class="face">左</div>
+        <div class="face">右</div>
+    </div>
+</div>
+</body>
+</html>
