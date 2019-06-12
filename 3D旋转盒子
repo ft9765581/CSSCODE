@@ -13,12 +13,14 @@
         .stage .box{
             transform-style: preserve-3d;
             position: relative;
-            margin: 0 auto;
+            width:200px;
+            height: 200px;
             transition: all 1s;
         }
         .stage .box:hover{
             transform: rotateX(90deg);
         }
+        /*悬停旋转效果*/
         .face{
             width: 200px;
             height: 200px;
