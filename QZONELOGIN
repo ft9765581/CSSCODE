@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            background-color: gray;
+            font-family: helvetica,arial,微软雅黑,华文黑体;
+            font-size: 16px;
+            box-sizing: content-box;
+        }
+        a{
+            text-decoration: none;
+        }
+        .head{
+            margin-bottom: 36px;
+        }
+        .login{
+            width:414px;
+            height: 312px;
+            background-color: white;
+            position: relative;
+            border: 2px solid #eeeeee;
+            margin: auto auto;
+        }
+        .head_name{
+            text-align: center;
+            margin-bottom: 16px;
+            font-size: 20px;
+            color: #333;
+            margin-bottom: 16px;
+        }
+        .subheading{
+            width: 414px;
+            height: 21px;
+            text-align: center;
+        }
+        .fast_login{
+           color:  #3481cf;
+        }
+        .fast_login:hover{
+            text-decoration:underline
+        }
+/*----------------------------------------------------------------*/
+        .login_form{
+            margin-left: 71px;
+            margin-right: 71px;
+            width: 272px;
+            height: 150px;
+        }
+        .input_box{
+            width: 272px;
+            height: 55px;
+        }
+        .input{
+            margin-top: 0px;
+            width: 258px;
+            height: 18px;
+            padding: 10px;
+
+        }
+
+        .submit{
+            width:272px;
+            height: 40px;
+            padding-left: 6px;
+            padding-right: 6px;
+            color: #fff;
+            background-color:#86ce2f;
+            line-height: 35px;
+            border: none;
+            font-size: 17px;
+            font-weight: 400;
+        }
+        .buttom{
+            text-align: right;
+            width: 414px;
+            height: 16px;
+            margin-left: -10px;
+            margin-right: 10px;
+            margin-bottom: 8px;
+            position: absolute;
+            font-size: 8px;
+            font-family: helvetica,arial,微软雅黑,华文黑体;
+            color: #666666;
+            bottom: 0px;
+
+        }
+        .bottom_btn{
+            color: #666666;
+        }
+        .bottom_dot{
+            margin: auto 5px;
+        }
+    </style>
+</head>
+<body>
+<div class="login">
+    <div class="head">
+        <div class="head_name">账号密码登录</div>
+        <div class="subheading">
+            推荐使用<a href="#" class="fast_login">快速安全登陆</a>，防止盗号。
+        </div>
+    </div>
+    <form class="login_form">
+        <div class="input_box">
+            <input class="input" type="text"></div>
+        <div class="input_box">
+            <input class="input" type="text"></div>
+        <button class="submit" type="button">登录</button>
+    </form>
+    <div class="buttom">
+        <a href="#"class="bottom_btn">忘记密码？</a><span class="bottom_dot">|</span>
+        <a href="#"class="bottom_btn">注册新账号</a><span class="bottom_dot">|</span>
+        <a href="#"class="bottom_btn">意见反馈</a>
+    </div>
+</div>
+</body>
+</html>
